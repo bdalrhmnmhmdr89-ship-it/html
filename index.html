@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#111111"><title>VYRO | تسوق بثقة</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="announcement">شحن سريع لجميع المحافظات <span>•</span> تسوق آمن وخدمة عملاء مميزة</div>
+  <header class="header">
+    <button class="mobile-menu" id="mobileMenu" aria-label="القائمة">☰</button>
+    <a class="logo" href="#" data-page="home"><span class="logo-mark">V</span><span>VYRO<small>COMMERCE</small></span></a>
+    <div class="header-contact" aria-label="بيانات التواصل">
+      <a class="header-whatsapp" href="https://wa.me/201271061162" target="_blank" rel="noopener noreferrer"><span aria-hidden="true">☏</span> واتساب</a>
+    </div>
+    <nav id="nav">
+      <a href="#" class="active" data-page="home">الرئيسية</a>
+      <a href="#" data-page="catalog">جميع المنتجات</a>
+      <a href="#" data-page="orders">تتبع الشحنة</a>
+      <a href="#" data-page="seller">بيع معنا</a>
+    </nav>
+    <div class="header-tools">
+      <label class="search"><span>⌕</span><input id="globalSearch" placeholder="ابحث عن منتج..."></label>
+      <button class="language" id="languageBtn">عربي⌄</button>
+      <button class="user-btn" id="accountBtn">♙ <span>حسابي</span></button>
+      <button class="cart-btn" id="cartBtn">🛒 <b id="cartCount">0</b></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page active" id="page-home">
+      <section class="hero">
+        <div class="hero-text">
+          <span class="kicker">تجربة تسوق مختلفة تبدأ من هنا</span>
+          <h1>تسوق أفضل المنتجات<br>مع ضمان الجودة وشحن<br><em>موثوق</em></h1>
+          <p>اكتشف مجموعة متنوعة من المنتجات المختارة بعناية، واستمتع بتجربة تسوق سهلة وآمنة مع VYRO.</p>
+          <div class="hero-buttons"><button class="btn btn-orange" data-goto="catalog">تسوق الآن <span>←</span></button><button class="btn btn-outline" data-goto="catalog">اكتشف المنتجات</button></div>
+          <div class="trust-row"><span>✓ منتجات مختارة بعناية</span><span>✓ تجربة شراء آمنة</span><span>✓ دعم ومتابعة الطلب</span></div>
+        </div>
+        <div class="hero-product">
+          <div class="hero-product-image hero-showcase-photo"><img src="vyro-showcase.jpg" alt="تشكيلة منتجات VYRO" loading="eager"></div>
+          <div class="hero-product-info"><div><b>اكتشف منتجات VYRO</b><small>تشكيلة مميزة من المنتجات في مكان واحد</small></div><span class="showcase-dot">✦</span></div>
+        </div>
+        <div class="hero-glow"></div>
+      </section>
+      <section class="benefits">
+        <div><span>▣</span><section><b>شحن لجميع المحافظات</b><small>توصيل حتى باب المنزل</small></section></div>
+        <div><span>♢</span><section><b>منتجات بجودة مميزة</b><small>اختيارات تناسب احتياجاتك</small></section></div>
+        <div><span>◉</span><section><b>دعم ومتابعة مستمرة</b><small>نحن معك خطوة بخطوة</small></section></div>
+        <div><span>✓</span><section><b>تسوق بكل ثقة</b><small>تجربة سهلة وآمنة</small></section></div>
+      </section>
+      <section class="content-section">
+        <div class="section-title"><div><span class="overline">اختيارات VYRO</span><h2>تسوق حسب القسم</h2></div><button class="plain-link" data-goto="catalog">عرض كل المنتجات ←</button></div>
+        <div class="category-grid">
+          <button class="category-card" data-category="إلكترونيات"><span>🎧</span><b>إلكترونيات</b><small>أجهزة وتقنيات</small></button>
+          <button class="category-card" data-category="أزياء"><span>👟</span><b>أزياء وموضة</b><small>ستايلك الخاص</small></button>
+          <button class="category-card" data-category="منزل"><span>🏠</span><b>المنزل</b><small>كل ما يحتاجه بيتك</small></button>
+          <button class="category-card" data-category="إكسسوارات"><span>⌚</span><b>إكسسوارات</b><small>تفاصيل تكمل أناقتك</small></button>
+        </div>
+      </section>
+      <section class="content-section featured-section">
+        <div class="section-title"><div><span class="overline">مختارة لك</span><h2>منتجات مميزة</h2><p>اكتشف منتجاتنا الأكثر تميزاً.</p></div><button class="plain-link" data-goto="catalog">كل المنتجات ←</button></div>
+        <div class="product-grid" id="featuredGrid"></div>
+      </section>
+      <section class="seller-cta"><div><span class="overline">هل لديك متجر؟</span><h2>اعرض منتجاتك على VYRO</h2><p>انضم إلى مجتمع الموردين وابدأ في الوصول إلى عملاء جدد.</p></div><button class="btn btn-orange" data-goto="seller">ابدأ البيع معنا ←</button></section>
+    </section>
+
+    <section class="page" id="page-catalog">
+      <div class="page-heading"><div><span class="overline">تسوق واكتشف</span><h1>كتالوج المنتجات الكامل</h1><p>اختر من بين مجموعة متنوعة من المنتجات.</p></div></div>
+      <div class="catalog-toolbar"><div class="chips" id="chips"><button class="chip selected" data-filter="all">جميع المنتجات</button><button class="chip" data-filter="إلكترونيات">إلكترونيات</button><button class="chip" data-filter="أزياء">أزياء وموضة</button><button class="chip" data-filter="منزل">المنزل</button><button class="chip" data-filter="إكسسوارات">إكسسوارات</button></div><div class="sort-tools"><select id="sortSelect"><option value="default">ترتيب حسب</option><option value="low">السعر: الأقل أولاً</option><option value="high">السعر: الأعلى أولاً</option></select><select id="availability"><option value="all">كل المنتجات</option><option value="available">المتاحة فقط</option></select></div></div>
+      <div class="product-grid catalog-grid" id="catalogGrid"></div><div class="empty-box hidden" id="emptyCatalog">لا توجد منتجات في هذا القسم حالياً.</div>
+    </section>
+
+    <section class="page" id="page-orders">
+      <div class="tracking-wrap"><span class="overline">تابع طلبك أينما كان</span><h1>تتبع مسار شحنتك</h1><p>أدخل رقم الطلب ورقم الهاتف المستخدم عند الشراء لمعرفة حالة شحنتك.</p>
+        <form id="trackingForm" class="tracking-form"><label>رقم الطلب<input required id="orderNumber" placeholder="مثال: VY-2026-001"></label><label>رقم الهاتف<input required id="orderPhone" placeholder="01xxxxxxxxx"></label><button class="btn btn-orange">تتبع الشحنة</button></form><div id="trackingResult"></div>
+      </div>
+    </section>
+
+    <section class="page" id="page-seller">
+      <div class="seller-page"><div><span class="overline">كن شريك نجاح</span><h1>خلّي منتجاتك<br><em>توصل لعملاء أكتر</em></h1><p>سجل كمورد على VYRO واعرض منتجاتك وتابع طلباتك من لوحة تحكم سهلة.</p><button class="btn btn-orange" id="sellerRegister">سجل كمورد الآن ←</button></div><div class="seller-visual"><div class="seller-icon">▧</div><b>VYRO PARTNERS</b><small>مساحة نمو تجارتك تبدأ هنا</small></div></div>
+    </section>
+  </main>
+
+  <footer><a class="logo" href="#" data-page="home"><span class="logo-mark">V</span><span>VYRO<small>COMMERCE</small></span></a><div class="footer-links"><a data-page="catalog">المنتجات</a><a data-page="orders">تتبع الشحنة</a><a data-page="seller">بيع معنا</a></div><p>© <span id="year"></span> VYRO Commerce. جميع الحقوق محفوظة.</p><button id="adminOpen" class="admin-link">دخول الإدارة</button></footer>
+
+  <div class="overlay hidden" id="authOverlay"><div class="auth-modal"><button class="close" data-close="authOverlay">×</button><div class="auth-brand"><span class="logo-mark">V</span><b>VYRO</b></div><div id="authContent"></div></div></div>
+  <div class="overlay hidden" id="cartOverlay"><div class="side-modal"><button class="close" data-close="cartOverlay">×</button><span class="overline">سلة التسوق</span><h2>سلة مشترياتك</h2><div id="cartItems"></div><div class="cart-summary"><span>الإجمالي</span><b id="cartTotal">0 ج.م</b></div><button class="btn btn-orange wide" id="checkout">إتمام الطلب</button></div></div>
+  <div class="overlay hidden" id="adminOverlay"><div class="side-modal admin-modal"><button class="close" data-close="adminOverlay">×</button><div id="adminContent"></div></div></div>
+  <div class="toast" id="toast"></div>
+  <script src="script.js"></script>
+</body></html>
